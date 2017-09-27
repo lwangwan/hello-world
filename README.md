@@ -1,2 +1,5 @@
 # hello-world
-hola, 
+<<<< readme-edits
+hola, 2jgf
+
+>>>>master
