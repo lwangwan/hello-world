@@ -1,0 +1,74 @@
+usuario@usuario:~/Documentos/hello-world$ git config user.email "lwangwan33@alumnes.ub.edu"
+usuario@usuario:~/Documentos/hello-world$ git config user.name "lwangwan"
+
+https://blog.desdelinux.net/guia-rapida-para-utilizar-github/
+
+
+git branch mirama # crea una nueva rama llamada mirama
+git checkout mirama - pasa a utilizar la rama mirama.
+
+git checkout -b mirama - crea y pasa a utilizar la rama mirama
+
+git add .
+git commit -m "cambios en mirama"
+
+git checkout master
+git merge mirama
+
+git branch -d mirama
+
+git push origin master
+
+usuario@usuario:~/Documentos/hello-world$ git checkout prueba
+Cambiado a rama 'prueba'
+usuario@usuario:~/Documentos/hello-world$ git push prueba
+fatal: 'prueba' does not appear to be a git repository
+fatal: No se pudo leer del repositorio remoto.
+
+Por favor asegúrese que tiene los permisos de acceso correctos
+y que el repositorio existe.
+usuario@usuario:~/Documentos/hello-world$ git branch
+  master
+* prueba
+usuario@usuario:~/Documentos/hello-world$ git push prueba
+fatal: 'prueba' does not appear to be a git repository
+fatal: No se pudo leer del repositorio remoto.
+
+Por favor asegúrese que tiene los permisos de acceso correctos
+y que el repositorio existe.
+usuario@usuario:~/Documentos/hello-world$ git push
+fatal: La rama actual prueba no tiene una rama upstream.
+Para realizar un push de la rama actual y configurar el remoto como upstream, use
+
+        git push --set-upstream origin prueba
+
+usuario@usuario:~/Documentos/hello-world$ git push --set-upstream origin prueba
+Username for 'https://github.com': lwangwan33
+Password for 'https://lwangwan33@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/lwangwan/hello-world.git/'
+usuario@usuario:~/Documentos/hello-world$ git push --set-upstream origin prueba
+Username for 'https://github.com': lwangwan
+Password for 'https://lwangwan@github.com': 
+Total 0 (delta 0), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'prueba' on GitHub by visiting:
+remote:      https://github.com/lwangwan/hello-world/pull/new/prueba
+remote: 
+To https://github.com/lwangwan/hello-world.git
+ * [new branch]      prueba -> prueba
+Rama 'prueba' configurada para hacer seguimiento a la rama remota 'prueba' de 'origin'.
+usuario@usuario:~/Documentos/hello-world$ git push prueba
+fatal: 'prueba' does not appear to be a git repository
+fatal: No se pudo leer del repositorio remoto.
+
+Por favor asegúrese que tiene los permisos de acceso correctos
+y que el repositorio existe.
+usuario@usuario:~/Documentos/hello-world$ git push
+Username for 'https://github.com': lwangwan
+Password for 'https://lwangwan@github.com': 
+Everything up-to-date
+usuario@usuario:~/Documentos/hello-world$ ^C
+usuario@usuario:~/Documentos/hello-world$ 
+
+
